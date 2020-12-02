@@ -4,9 +4,9 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
-    "jquery": "^3.4.1",
     "axios": "^0.21.0",
     "face-api.js": "^0.22.2",
+    "jquery": "^3.4.1",
     "react": "^16.6.3",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.6.3",
