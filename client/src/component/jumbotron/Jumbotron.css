@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.jumbotron{
+    padding: 0px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius:.3rem;
+    opacity: 95%;
+    height: 10rem;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing:0;
+    line-height:undefined;
+    color: #e96a66;
+    padding: 0;
+    margin-left: 5%;
+}
+
+p{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    color:#5c969e;
+}
+    
+@media (min-width:576px){
+    .jumbotron{
+        padding:4rem 2rem
+    }
+}
+.jumbotron-fluid{
+    padding-right:0;
+    padding-left:0;
+    border-radius:0
+}

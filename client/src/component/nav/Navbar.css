@@ -1,0 +1,105 @@
+body, h2,h3,h4,h5,h6 {
+    font-family:Cera Pro
+}
+/* Set the width of the sidebar to 120px */
+.sidebar {
+    width: 120px;
+    background-color: #fcdada;
+    height:100%;
+    width:200px;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+    color: white;
+    font-family:Cera Pro;
+    font-size: 20px;
+}
+.w3-bar-block .w3-bar-item {
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+  }
+  
+.w3-bar-block.w3-center .w3-bar-item {
+text-align: center
+}
+
+.w3-bar-block .w3-dropdown-hover,
+.w3-bar-block .w3-dropdown-click {
+  width: 100%
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,
+.w3-bar-block .w3-dropdown-click .w3-dropdown-content {
+  min-width: 100%
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,
+.w3-bar-block .w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px
+}
+@media (max-width:600px) {
+    .bigNav{
+        display:none!important
+    }
+}
+@media (min-width:993px) {
+    .smallNav{
+        display:none!important
+    }
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family:Cera Pro;
+}
+
+.btn{
+    display:inline-block;
+    font-weight:20px;
+    color: white;
+    background-color: teal;
+    width: 150px;
+    text-align:center;
+    vertical-align:middle;
+    border:1px solid white;
+    padding:.375rem 1rem;
+    margin-top: .5rem;
+    font-size:20px;
+    line-height: 20px;
+    border-radius:.5rem;
+
+}
+
+navBtn{
+    font-family:Cera Pro;
+}
+
+@media (prefers-reduced-motion:reduce){
+    .btn{
+        transition:none
+    }
+}
+.btn:hover{
+    color:#212529;
+    text-decoration:none
+}

@@ -1,0 +1,108 @@
+.form-group{
+    margin-bottom:1rem
+}
+.form-text{
+    display:block;
+    margin-top:.25rem
+}
+.form-row{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-5px;margin-left:-5px
+}
+.form-row>.col,.form-row>[class*=col-]{
+    padding-right:5px;
+    padding-left:5px
+}
+.form-check{
+    position:relative;
+    display:block;
+    padding-left:1.25rem
+}
+.form-check-input{
+    position:absolute;
+    margin-top:.3rem;
+    margin-left:-1.25rem
+}
+
+.card{
+    position:relative;
+    opacity: 95%;
+    display:-ms-flexbox;
+    display:flex;
+    width: 45%;
+    margin-left: 25%;
+    margin-top: 25px;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    min-width:0;word-wrap:break-word;
+    background-color:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:.25rem
+}
+#card>hr{
+    margin-right:0;
+    margin-left:0
+}
+.card>.list-group{
+    border-top:inherit;
+    border-bottom:inherit
+}
+.card>.list-group:first-child{
+    border-top-width:0;
+    border-top-left-radius:calc(.25rem - 1px);
+    border-top-right-radius:calc(.25rem - 1px)
+}
+.card>.list-group:last-child{
+    border-bottom-width:0;
+    border-bottom-right-radius:calc(.25rem - 1px);
+    border-bottom-left-radius:calc(.25rem - 1px)
+}
+.card>.card-header+.list-group,.card>.list-group+.card-footer{
+    border-top:0
+}.card-body{
+    -ms-flex:1 1 auto;flex:1 1 auto;
+    min-height:1px;padding:1.25rem
+}.card-title{
+    margin-bottom:.75rem;
+    color:rgba(92.00000211596489, 150.0000062584877, 158.00000578165054, 1);
+    font-family: 'Satisfy', cursive;
+    font-size:40px
+}
+.card-subtitle{
+    margin-top:-.375rem;
+    margin-bottom:0
+}.card-text:last-child{
+    margin-bottom:0
+}.card-link:hover{
+    text-decoration:none
+}.card-link+.card-link{
+    margin-left:1.25rem
+}.card-header{
+    padding:.75rem 1.25rem;
+    margin-bottom:0;
+    background-color:rgba(0,0,0,.03);
+    border-bottom:1px solid rgba(0,0,0,.125)
+}.card-header:first-child{
+    border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+}.card-footer{
+    padding:.75rem 1.25rem;
+    background-color:rgba(0,0,0,.03);
+    border-top:1px solid rgba(0,0,0,.125)
+}
+.card-footer:last-child{
+    border-radius:0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+}
+.card-header-tabs{
+    margin-right:-.625rem;
+    margin-bottom:-.75rem;
+    margin-left:-.625rem;
+    border-bottom:0
+}
+.card-header-pills{
+    margin-right:-.625rem;
+    margin-left:-.625rem
+}
