@@ -22,7 +22,11 @@ const OverlayComponent = styled.div`
 const FaceDetectionComponent = () => {
     const videoRef = useRef();
     const canvasRef = useRef();
-    const [emotion, setEmotion] = useState();
+    const [cameraReady, setCameraReady] = useState(false);
+
+    const cameraIsReady = () => {
+        setCameraReady(true);
+    };
 
     const initModels = async () => {
         await nets.tinyFaceDetector.load("/models/");
@@ -47,16 +51,22 @@ const FaceDetectionComponent = () => {
                 item => expressions[item] === maxValue
             );
 
-            setEmotion(emotion[0]);
             redirectToPage(emotion[0]);
             
             /////// expression capture ////////
 
-        }
-        if (emotion !== undefined) {
+        } else {
             setTimeout(() => startFaceDetection());
         }
+
     };
+
+    useEffect(() => {
+        if (cameraReady) {
+            startFaceDetection();
+        }
+    }, [cameraReady])
+
 
     useEffect(() => {
         initModels();
@@ -65,11 +75,10 @@ const FaceDetectionComponent = () => {
 
     return (
         <ContainerComponent>
-            <CameraComponent videoRef={videoRef} onReady={startFaceDetection} />
+            <CameraComponent videoRef={videoRef} onReady={cameraIsReady} />
             <OverlayComponent>
                 <CanvasComponent canvasRef={canvasRef} />
             </OverlayComponent>
-            <div>Emotion: {emotion}</div>
         </ContainerComponent>
     );
 };
