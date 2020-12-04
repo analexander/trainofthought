@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
 import HomeLandingPage from "./pages/LandingPage"
-import NavBar from "./component/nav/Navbar"
 import FaceDetectionPage from './pages/FaceDetectionPage/FaceDetectionPage';
 import Login from './pages/Passport/login';
 import Home from './pages/Passport/home';
 import Register from './pages/Passport/register';
+import BottomAppBar from '../src/component/nav/BottomAppBar'
 
 function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        <BottomAppBar/>
         <Switch>
           <Route exact path={["/", "/home"]}>
             <HomeLandingPage />
